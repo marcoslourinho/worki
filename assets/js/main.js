@@ -141,6 +141,9 @@
 					event.stopPropagation();
 					event.preventDefault();
 
+					var form = document.getElementById("signup-form");
+					form.submit();
+
 					// Hide message.
 						$message._hide();
 
@@ -159,7 +162,7 @@
 								$submit.disabled = false;
 
 							// Show message.
-								$message._show('success', 'Thank you!');
+								$message._show('success', 'Show! Obrigado por cadastrar!');
 								//$message._show('failure', 'Something went wrong. Please try again.');
 
 						}, 750);
